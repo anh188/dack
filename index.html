@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/responsive.css">
     <script src="./js/script.js" defer></script>
+    <script></script>
     <title>Home</title>
 </head>
 <body>
@@ -64,11 +65,12 @@
                 <ul id="main-menu" class="nav menu-item col-7">
                     <li><a href="./index.html">Home <i class="fa-solid fa-chevron-down"></i></a>
                         <ul class="sub-menu">
-                            <li><a href="#filter">Filter</a></li>
+                            <li><a href="#filters">Filter</a></li>
                             <li><a href="#properties">Flowwer</a></li>
                             <li><a href="#implement">Implement</a></li>
-                            <li><a href="#service">Service</a></li>
                             <li><a href="#cake">Cake</a></li>
+                            <li><a href="#agent">Agent</a></li>
+                            <li><a href="#service">Service</a></li>
                         </ul>
                     </li>
                     <li><a href="">Products <i class="fa-solid fa-chevron-down"></i></a>
@@ -84,13 +86,7 @@
                             <li><a href="./agent_list.html" target="_blank">Agent</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Blog <i class="fa-solid fa-chevron-down"></i></a>
-                        <ul class="sub-menu">
-                            <li><a href="">menu-1</a></li>
-                            <li><a href="">menu-2</a></li>
-                            <li><a href="">menu-3</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="./blog.html" target="_blank">Blog</a></li>
                     <li><a href="">Contact</a></li>
               </ul>
               <div class="nav d-flex menu-btn">
@@ -103,18 +99,82 @@
     </div>
     
     
-    <div id="filter">
+    <div id="filters">
         <div class="container pd-tb filter-content">
             <h1 class="mb-4 pb-4">Your Choice <span style="color: #F1B4BB;">Flowwer</span></h1>
-            <div class="row d-flex filter-lb">
-                <input class="filter-item" type="text" placeholder="Enter Your Keyword...">
-                <input class="filter-item" type="text" placeholder="Location">
-                <input class="filter-item" type="text" placeholder="For Rent">
-                <input class="filter-item" type="text" placeholder="">
-                <input class="filter-item" type="text" placeholder="">
-                <input class="filter-item" type="text" placeholder="">
-                <input class="filter-item" type="text" placeholder="">
-                <input class="filter-item" type="text" placeholder="">
+            <div class="filter-lb">
+                <form class="filter row" action="">
+                    <div class="filter-item">
+                        <input class="" type="text" placeholder="Enter Your Keyword...">
+                    </div>
+                    <div class="filter-item">
+                        <input class="" type="text" placeholder="Location">
+                    </div>
+                    <div class="filter-item">
+                        <select name="type" id="">
+                            <option value="">Type</option>
+                            <option value="hoa">Hoa</option>
+                            <option value="banh">Bánh</option>
+                            <option value="phukien">Phụ kiện</option>
+                        </select>
+                    </div>
+                    <div class="filter-item">
+                        <select name="color" id="">
+                            <option value="">Color</option>
+                            <option value="blue">Blue</option>
+                            <option value="while">white</option>
+                            <option value="red">Red</option>
+                            <option value="pink">Pink</option>
+                            <option value="violet">Violet</option>
+                        </select>
+                    </div>
+                        <div class=" double-slider-box">
+                            <h3 class="range-title">
+                                Price
+                            </h3>
+                            <div class="range-slider">
+                                <span class="slider-track"></span>
+                                <input type="range" name="min-val" class="min-val" value="2000" min="1000" max="12000">
+                                <input type="range" name="max-val" class="max-val" value="7000" min="1000" max="12000">
+                                <div class="tooltip min-tooltip"></div>
+                                <div class="tooltip max-tooltip"></div>
+                            </div>
+                            <div class="input-box">
+                                <div class="min-box">
+                                    <div class="input-wrap">
+                                        <span class="input-addon">$</span>
+                                        <input type="text" name="min-input" class="input-field min-input">
+                                    </div>
+                                </div>
+                                <div class="max-box">
+                                    <div class="input-wrap">
+                                        <span class="input-addon">$</span>
+                                        <input type="text" name="max-input" class="input-field max-input">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- <div class="filter-item">
+                        <select name="size" id="">
+                            <option value="">Size</option>
+                            <option value="big">Big</option>
+                            <option value="middle">middle</option>
+                            <option value="small">small</option>
+                        </select>
+                    </div> -->
+                    <div class="filter-item">
+                        <button>Search</button>
+                    </div>
+                    
+                    <!-- <input class="filter-item" type="text" placeholder="Enter Your Keyword...">
+                    <input class="filter-item" type="text" placeholder="Location">
+                    <input class="filter-item" type="text" placeholder="For Rent">
+                    <input class="filter-item" type="text" placeholder="">
+                    <input class="filter-item" type="text" placeholder="">
+                    <input class="filter-item" type="text" placeholder="">
+                    <input class="filter-item" type="text" placeholder="">
+                    <input class="filter-item" type="text" placeholder=""> -->
+                </form>
             </div>
         </div>
     </div>
@@ -626,6 +686,7 @@
     <!-- Initialize Swiper -->
     <script src="./js/btn.js"></script>
     <script src="./js/validate.js"></script>
+    <script src="./js/price.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

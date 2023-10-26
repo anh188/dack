@@ -1,9 +1,9 @@
 /*mobile-tablet*/
 @media all and (max-width:1023px){
-    
-    
+
+
 }
- 
+
 /* mobile */
 @media all and (min-width:320px) and (max-width: 767px){
     .menu-item{
@@ -41,15 +41,15 @@
         display: block;
         text-align: left;
      }
-  
-     .ft-center{  
+
+     .ft-center{
         margin-top: 10px;
         padding: 0px 0 20px 0;
      }
-     .ft-center ul{  
+     .ft-center ul{
         padding-left: 0;
      }
-  
+
      .fr-center-bot{
         padding-left: 30px;
      }
@@ -58,14 +58,14 @@
     }
     .pay{
         margin-left: 70px;
-    } 
+    }
     .ft-right{
         margin-left: 0;
     }
 }
- 
- 
- 
+
+
+
 /*tablet*/
 @media(min-width:768px) and (max-width: 1023px){
 
@@ -76,7 +76,7 @@
     .menu-btn .submit {
         width: 100px;
     }
-    
+
     #main-menu a {
         padding: 11px 0px;
     }
@@ -97,22 +97,22 @@
     }
     .ft-center {
         padding-left: 0;
-    }  
+    }
     .ft-all .ft-right{
         margin-left: 0 !important;
-    }  
+    }
     .ft-right i{
         font-size: 30px;
     }
     .ft-right {
         margin-left: 0 !important;
     }
-    
+
 }
 
 
- 
+
 /*pc*/
 @media all and (min-width:1024px){
- 
+
 }

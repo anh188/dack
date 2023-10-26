@@ -1,0 +1,373 @@
+
+/* /content center/ */
+#content .container{
+    margin-top: 60px;
+}
+.container1{
+    justify-content: space-around;
+    display: flex;
+    padding: 0px 15%;
+}
+.content-right{
+    padding-left: 10%;
+    line-height: 3;
+}
+.popular-item a{
+    display: flex;
+    color: #000;
+}
+
+/* .content-left */
+.content-left-text{
+    color: #1F4172;
+    line-height: 1.5;
+}
+.content-left-text p{
+    padding-bottom: 20px;
+}
+.left-img1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 5px;
+}
+.img-items{
+    display: flex;
+    width: 97.3%;
+    border-radius: 5px;
+    margin-bottom: 60px;
+}
+.img-items img{
+    border-radius: 5px;
+}
+.img-items img:not(:last-child) {
+    margin-right: 20px;
+}
+.categories-tag{
+    margin-top: 48px;
+}
+.categories-tag a{
+    color: #F1B4BB !important;
+}
+.comments{
+    margin-top: 60px;
+}
+.comments-list .comments-items{
+    display: flex;
+}
+.comments-list{
+    margin-top: 40px;
+}
+.comments-text{
+    padding-left: 20px;
+    line-height: 2;
+}
+.comments-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.comments-list li{
+    margin-bottom: 40px;
+}
+.comments-text a{
+    background-color: #F1B4BB;
+    border-radius: 2px;
+    padding: 5px 10px;
+    color: #000;
+}
+.cm-text{
+    color: #818080;
+    padding-bottom: 16px;
+}
+.cm-time{
+    font-size: 14px;
+    color: #cfcecec0;
+}
+.comments-child{
+    padding: 50px 0 0 40px; 
+}
+.comment{
+    display: flex;
+}
+.leave h3{
+    margin: 80px 0 40px 0;
+}
+.leave .form{
+    height: 550px;
+}
+.form-comment{
+padding: 30px;
+}
+.form{
+    height: 500px;
+    background-color: #cfcece3f;
+}
+.input{
+    position: relative;
+    display: block;
+    margin-bottom: 50px;
+}
+.input input{
+    left: 0;
+    bottom: -30px;
+    position: absolute;
+    width: 100%;
+    height: 25px;
+}
+.input textarea{
+    left: 0;
+    bottom: -170px;
+    position: absolute;
+    width: 100%;
+}
+.input label{
+    color: #818080;
+}
+.form-comment button{
+    margin-top: 130px;
+    background-color: #F1B4BB;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+
+/* content right */
+.popular-item{
+    padding: 0;
+}
+.popular, .categories{
+    margin-top: 60px;
+}
+.popular h3, .tag h3, .categories h3{
+    margin-bottom: 30px;
+    border-bottom: 1px solid #81808080;
+}
+.popular-img{
+        width: 100px; /* Đặt chiều rộng mong muốn */
+        height: 100px; /* Đặt chiều cao mong muốn */
+        object-fit: cover; /* Đảm bảo ảnh không bị biến dạng */
+      
+}
+.popular-item li{
+    display: flex;
+    margin-top: 25px;
+}
+.popular-text{
+    padding-left: 20px;
+    line-height: 1.5;
+}
+.popular-text h4{
+    font-size: 18px;
+    font-weight: 500;
+}
+.popular-text p{
+    font-size: 14px;
+    font-weight: 500;
+    color: #81808080;
+}
+.categories-list ul li {
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #81808080;
+    position: relative;
+    cursor: pointer;
+}
+.categories-list a  {
+    text-decoration: none;
+    color: #F1B4BB;
+}
+.list-items{
+    position: absolute;
+    right: 0;
+    color: #81808080;
+}
+.categories-list ul li:hover span{
+    color: #000;
+}
+
+.tag{
+    margin-top: 60px;
+}
+.tag-list {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các phần tử chuyển hàng khi không còn đủ chỗ */
+    line-height: 2;
+}
+.tag-list a{
+    padding: 2px 4px;
+    color: #818080;
+    background-color: #ebeaeac0;
+    border-radius: 2px;
+}
+.tag-list a{
+    text-transform: capitalize;
+}
+.tag-list a:hover{
+    color: #fff;
+    background-color: #1c1b1bc0;
+}
+.tag-list li{
+    margin: 0 5px 0 0;
+}
+
+
+.more-imgs{
+    justify-content: end;
+    margin-top: 40px;
+}
+.more-imgs-r{
+    display: flex;
+}
+.more-imgs-right{
+    order: 2;
+}
+.more-imgs-left{
+height: 100%;    
+}
+.img1{
+    width: 98%;
+}
+.img5{
+    margin-left: 10px;
+    width: 98%;
+    height: 100%;
+}
+
+.imgs-left-its{
+    display: flex;
+}
+
+.imgs-left-its img{
+    margin-top: 20px;
+    width: 96%;
+}
+.img2{
+    height: 100%;
+    padding-right: 10px;
+}
+.img3{
+    height: 100%;
+}
+.img5-content{
+    width: 98%;
+    right: 0;
+    bottom: -140px;
+    padding: 40px 10px ;
+    height: 150px;
+    line-height: 2;
+}
+.img-top, .more-imgs-right, .img-botleft, .img-botright{
+    position: relative;
+    overflow: hidden; 
+}
+.img5-content, .img1-content, .img2-content, .img3-content{
+    position: absolute;
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%);/*Đổ màu mờ dần*/
+    size: 8px;
+    font-weight: 400;
+    transition: 0.5s ease-in-out;
+}
+.img1-content{
+    width: 98%;
+    bottom: -150px;
+    padding: 50px 10px ;
+    height: 150px;
+    line-height: 2;
+}
+.img-top:hover .img1-content, .img-botright:hover .img3-content, .more-imgs-right:hover .img5-content, .img-botleft:hover .img2-content{
+    bottom: 0;
+}
+
+.img2-content{
+    bottom: -150px;
+    width: 92.5%;
+    padding: 20px 10px ;
+    height: 100px;
+
+}
+.img3-content{
+    bottom: -150px;
+    width: 96%;
+    padding: 20px 10px ;
+    height: 100px;
+
+}
+.more{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    margin: 10px;
+}
+.tag-travel{
+    background-color: red;
+}
+.tag-lifestyle{
+    background-color: rgb(255, 128, 0);
+}
+.tag-sport{
+    background-color: rgb(0, 153, 255);
+}
+.more1, .more{
+    top: -40px;
+    transition: 0.5s ease-in-out;
+}
+.more1, .more2, .more3{
+    position: absolute;
+    margin: 10px;
+}
+.more2, .more3{
+    top: 20px;
+    left: -200px;
+    transition: 0.5s ease-in-out;
+}
+.img-top:hover .more1, .more-imgs-right:hover .more{
+    top: 0;
+}
+.img-botleft:hover .more2, .img-botright:hover .more3{
+    left: 0;
+}
+.img-botleft a{
+    overflow: hidden;
+}
+
+.content-sub{
+    justify-content: center ;
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 2;
+    margin: 80px 30%;
+}
+.sub h2{
+    margin-top: 50px;
+ }
+
+.sub p{
+   color: #0000008b;
+}
+.sub{
+    position: relative;
+}
+.sub input{
+    margin-top: 30px;
+    height: 31px;
+    width: 100%;
+}
+
+.sub button{
+    color: #fff;
+    background-color: #1F4172;
+    height: 31px;
+    border: none;
+    position: absolute;   
+    bottom: 0; 
+    right: 0;
+    padding: 0 10px;
+}
+.sub button:hover{
+    background-color: #3f75f5;
+    cursor: pointer;
+}
