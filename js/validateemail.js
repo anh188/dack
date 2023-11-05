@@ -1,3 +1,4 @@
+// validateEmail
 document.getElementById('emailForm').addEventListener('submit', function(event) {
     event.preventDefault();
     
@@ -6,10 +7,10 @@ document.getElementById('emailForm').addEventListener('submit', function(event) 
 
     // Kiểm tra địa chỉ email
     if (emailInput == '') {
-      document.getElementById('emailError').innerHTML = 'Yêu cầu nhập email';
+      document.getElementById('emailError').innerHTML = 'Requires email entry';
     }else if (!validateEmail(emailInput)) {
   // setError(emailEle, 'Yêu cầu nhập email');
-      document.getElementById('emailError').innerHTML = 'Địa chỉ email không hợp lệ';
+      document.getElementById('emailError').innerHTML = 'Email address is not valid';
     } 
     else {
       document.getElementById('emailError').innerHTML = '';

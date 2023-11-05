@@ -1,0 +1,37 @@
+/* Kích thước mobile: min-width: 320px and max-width: 767px
+
+Kích thước tablet: min-width: 768px and max-width: 991px */
+
+/*mobile*/
+@media all and (min-width:320px) and (max-width: 767px){ 
+    .cskh, .map-item{
+        display: block;
+        text-align: center;
+       }
+       .lh-right,.map-left{
+        margin-top: 80px;
+       }
+ }
+ 
+ 
+ 
+ /*tablet*/
+ @media(min-width:768px) and (max-width: 1023px){
+
+
+ }
+  /*tl-mb*/
+  @media all and (max-width:1023px){
+    .cskh, .map-item{
+        display: block;
+        text-align: center;
+       }
+       .lh-right,.map-left{
+        margin-top: 80px;
+       }
+  }
+ 
+ /*pc*/
+ @media all and (min-width:1024px){
+ 
+ }

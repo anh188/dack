@@ -1,0 +1,27 @@
+.offer-content{
+    padding: 100px 0;
+}
+.offer-lf{
+    line-height: 3;
+    width: 100%;
+}
+.offer-iems .offer-img{
+    width: 500px;
+    height: 300px;
+    font-size: 30px;
+    object-fit: cover;
+    margin-bottom: 60px;
+}
+.offer-iems{
+    display: flex;
+}
+
+.offer-iems a{
+    margin-left: 20px;
+    color: #1F4172;
+}
+.offer-iems a:hover{
+    text-decoration: none;
+    color: #F1B4BB   ;
+}
+

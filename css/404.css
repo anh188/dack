@@ -1,0 +1,33 @@
+.page-404{
+    margin: 40px 0;
+}
+.page-404 img{
+    width: 100%;
+}
+
+.fzf{
+    background: url(/img/1.gif) no-repeat;
+    height: 500px;
+    background-position: center;
+}
+h1
+{
+    font-size: 80px;
+}
+h3
+{
+    font-size: 60px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #38a4d6;
+    display: inline-block;
+}
+a:hover{
+    text-decoration: none;
+}
+.content-box{
+    margin-top: -50px;
+}

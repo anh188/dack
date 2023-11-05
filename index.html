@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="icon" href="./img/home.png">
     <script src="./js/script.js" defer></script>
-    <script></script>
+
     <title>Home</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
                 <img class="logo-img" src="./img/logo.webp" alt="" height="70">
                 <h1 class="p-2 logo-text fff" style="color: white;">Sayya</h1>
             </div>
-            <div class="d-flex">
+            <div class="header-item d-flex">
                 <div class="d-flex mb-0 icon-contact">
                     <i class="fa-solid fa-phone"></i>
                     <div>
@@ -34,8 +35,8 @@
                 <div class="d-flex mb-0 icon-contact">
                     <i class="fa-solid fa-location-dot"></i>
                     <div>
-                        <p class="contact-item">+123 456 789</p>
-                        <p class="contact-item">anh@gmail.com</p>
+                        <p class="contact-item">Dong Anh</p>
+                        <p class="contact-item">Ha Noi</p>
                     </div>
                 </div>
                 <div class="icon-contact icon-search">
@@ -47,23 +48,72 @@
         </div>
     </div>
 
-    <div class="menu-m">        
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./img/hoa1.webp" alt=""></div>
-                <div class="swiper-slide"><img src="./img/hoa2.webp" alt=""></div>
-                <div class="swiper-slide"><img src="./img/hoa3.webp" alt=""></div>
-                <div class="swiper-slide"><img src="./img/hoa4.webp" alt=""></div>
-                <div class="swiper-slide"><img src="./img/hoa5.webp" alt=""></div>
-                <div class="swiper-slide"><img src="./img/hoa6.webp" alt=""></div>
-                <div class="swiper-slide"><img src="./img/hoa7.webp" alt=""></div>
+    <div class="container login-from">
+        <div class="wrapper-log">
+            <span class="icon-close"><i class="fa-solid fa-xmark" style="color: #fafafa;"></i></span>
+            <div class="form-box login">
+                <h2>login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="email" name="" id="" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" name="" id="" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn-login">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
             </div>
-            <div class="swiper-button-next sbn"></div>
-            <div class="swiper-button-prev sbp"></div>
-            <div class="swiper-pagination"></div>
-            <nav class="container menu d-flex">
-                <ul id="main-menu" class="nav menu-item col-7">
-                    <li><a href="./index.html">Home <i class="fa-solid fa-chevron-down"></i></a>
+    
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" name="" id="username" required autocomplete="off">
+                        <label>Username</label>
+                        <small>Error message</small>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="Email" name="" id="email" required autocomplete="off">
+                        <label>Email</label>
+                        <small>Error message</small>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" name="" id="password" required autocomplete="off">
+                        <label>Password</label>
+                        <small>Yêu cầu nhập mật khẩu</small>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> I agree to the terms & condition</label>
+                    </div>
+                    <button class="btn" id="btn-register">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <nav class="container menu d-flex">
+            <button class="btn-menu"><i class="fa-solid fa-bars"></i></button>
+            <div class="sidebar">
+                <ul id="main-menu" class="nav menu-item">
+                    <li class="mn-item"><a href="./index.html">Home <i class="fa-solid fa-chevron-down"></i></a>
                         <ul class="sub-menu">
                             <li><a href="#filters">Filter</a></li>
                             <li><a href="#properties">Flowwer</a></li>
@@ -73,31 +123,84 @@
                             <li><a href="#service">Service</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Products <i class="fa-solid fa-chevron-down"></i></a>
+                    <li class="mn-item"><a href="">News<i class="fa-solid fa-chevron-down"></i></a>
                         <ul class="sub-menu">
-                            <li><a href="">menu-1</a></li>
-                            <li><a href="">menu-2</a></li>
-                            <li><a href="">menu-3</a></li>
+                            <li><a href="./offers.html">Special Offers</a></li>
+                            <li><a href="./event.html">Events</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Pages <i class="fa-solid fa-chevron-down"></i></a>
+                    <li class="mn-item"><a href="">Pages <i class="fa-solid fa-chevron-down"></i></a>
                         <ul class="sub-menu">
+                            <li><a href="./404.html">404</a></li>
                             <li><a href="./About.html" target="_blank">About</a></li>
                             <li><a href="./agent_list.html" target="_blank">Agent</a></li>
                         </ul>
                     </li>
-                    <li><a href="./blog.html" target="_blank">Blog</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li class="mn-item"><a href="./blog.html">Blog</a></li>
+                    <li class="mn-item"><a href="./contact.html">Contact</a></li>
               </ul>
-              <div class="nav d-flex menu-btn">
-                  <button>Login</button>
-                  <button>Register</button>
-                  <button class="submit">Submit</button>
-              </div>
-            </nav>
+            </div>
+          <div class="nav d-flex menu-btn">
+                <button class="btnLogin-popup">Login</button>
+                <button class="submit">Submit</button>
+          </div>
+        </nav>
+    </div>
+    
+    
+
+    <div class="menu-m">        
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/hoa3.webp" alt="">
+                    <div class="menu-box-content">
+                        <div class="menu-box">
+                            <h1>Fresh flower</h1>
+                            <p>“Enough fate and fate will knock on the door</p>
+                            <p>If you are sincere enough, happiness will bloom.”</p>
+                            <a href="#">Experience now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/pt.webp" alt="">
+                    <div class="menu-box-content">
+                        <div class="menu-box">
+                            <h1>Sophisticated space evokes creativity</h1>
+                            <p>You just need to choose a location, we will help you implement all your organizational ideas in the most professional and perfect way.</p>
+                            <a href="#">Experience now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/qua.webp" alt="">
+                    <div class="menu-box-content">
+                        <div class="menu-box">
+                            <h1>Present</h1>
+                            <p>The gift box not only has the meaning of "hiding", making the gift "discreet" and "polite", but it also helps increase the value of the gift and shows respect for the recipient.</p>
+                            <a href="#">Experience now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/camhoa.jpg" alt="">
+                    <div class="menu-box-content">
+                        <div class="menu-box">
+                            <h1>Train</h1>
+                            <p>Those who love flowers and have a passion for flower arrangements will become more proficient and have expertise in events such as weddings, holidays, and home decoration.</p>
+                            <a href="#">Experience now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next sbn"></div>
+            <div class="swiper-button-prev sbp"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </div>
     
+
     
     <div id="filters">
         <div class="container pd-tb filter-content">
@@ -105,76 +208,84 @@
             <div class="filter-lb">
                 <form class="filter row" action="">
                     <div class="filter-item">
-                        <input class="" type="text" placeholder="Enter Your Keyword...">
+                        <input class="lb" type="text" placeholder="Enter Your Keyword...">
                     </div>
                     <div class="filter-item">
-                        <input class="" type="text" placeholder="Location">
+                        <input class="lb" type="text" placeholder="Location">
                     </div>
                     <div class="filter-item">
                         <select name="type" id="">
                             <option value="">Type</option>
-                            <option value="hoa">Hoa</option>
-                            <option value="banh">Bánh</option>
-                            <option value="phukien">Phụ kiện</option>
+                            <option value="hoa">Flowwer</option>
+                            <option value="banh">Cake</option>
+                            <option value="phukien">Accessory</option>
                         </select>
                     </div>
                     <div class="filter-item">
                         <select name="color" id="">
-                            <option value="">Color</option>
+                            <option value="">Red</option>
                             <option value="blue">Blue</option>
-                            <option value="while">white</option>
-                            <option value="red">Red</option>
-                            <option value="pink">Pink</option>
-                            <option value="violet">Violet</option>
+                            <option value="while">Yellow</option>
+                            <option value="red">Green</option>
+                            <option value="red">Black</option>
+                            <option value="red">While</option>
+                            <option value="red">Brown</option>
                         </select>
                     </div>
-                        <div class=" double-slider-box">
-                            <h3 class="range-title">
-                                Price
-                            </h3>
+                    <div class="filter-item">
+                        <div class="double-slider-box">
+                            <p class="range-title">Price range: from 10 to 1200</p>
                             <div class="range-slider">
-                                <span class="slider-track"></span>
-                                <input type="range" name="min-val" class="min-val" value="2000" min="1000" max="12000">
-                                <input type="range" name="max-val" class="max-val" value="7000" min="1000" max="12000">
-                                <div class="tooltip min-tooltip"></div>
-                                <div class="tooltip max-tooltip"></div>
+                            <span class="slider-track"></span>
+                            <input type="range" name="min_val" class="min-val" min="10" max="1200" value="200" oninput="sliderMin()">
+                            <input type="range" name="max_val" class="max-val" min="10" max="1200" value="700" oninput="sliderMax()">
+                            <div class="tooltip min-tooltip"></div>
+                            <div class="tooltip max-tooltip"></div>
                             </div>
-                            <div class="input-box">
-                                <div class="min-box">
-                                    <div class="input-wrap">
-                                        <span class="input-addon">$</span>
-                                        <input type="text" name="min-input" class="input-field min-input">
-                                    </div>
+                            <div class="input-box-prc">
+                            <div class="min-box">
+                                <div class="input-wrap">
+                                <span class="input-addon">
+                                    $
+                                </span>
+                                <input type="text" name="min_input" class="input-field min-input" onchange="setMinInput()">
                                 </div>
-                                <div class="max-box">
-                                    <div class="input-wrap">
-                                        <span class="input-addon">$</span>
-                                        <input type="text" name="max-input" class="input-field max-input">
-                                    </div>
+                            </div>
+                            <div class="max-box">
+                                <div class="input-wrap">
+                                <span class="input-addon">
+                                    $
+                                </span>
+                                <input type="text" name="max_input" class="input-field max-input" onchange="setMaxInput()">
                                 </div>
+                            </div>
                             </div>
                         </div>
-                    <!-- <div class="filter-item">
-                        <select name="size" id="">
-                            <option value="">Size</option>
-                            <option value="big">Big</option>
-                            <option value="middle">middle</option>
-                            <option value="small">small</option>
-                        </select>
-                    </div> -->
+                    </div>
                     <div class="filter-item">
                         <button>Search</button>
-                    </div>
-                    
-                    <!-- <input class="filter-item" type="text" placeholder="Enter Your Keyword...">
-                    <input class="filter-item" type="text" placeholder="Location">
-                    <input class="filter-item" type="text" placeholder="For Rent">
-                    <input class="filter-item" type="text" placeholder="">
-                    <input class="filter-item" type="text" placeholder="">
-                    <input class="filter-item" type="text" placeholder="">
-                    <input class="filter-item" type="text" placeholder="">
-                    <input class="filter-item" type="text" placeholder=""> -->
+                    </div> 
                 </form>
+            </div>
+            <div class="others">
+                <div class="feature-content align-items-center col-12">
+                    <div class="feature-text">
+                       <div class="accordion">
+                        <div class="accordion-item">
+                          <div class="accordion-header">Others <span class="toggle-icon">+</span></div>
+                          <div class="accordion-box">
+                            <div class="accordion-content row">
+                                <label class="filter-item"><input type="checkbox"> Available</label>
+                                <label class="filter-item"><input type="checkbox"> Place request</label>
+                                <label class="filter-item"><input type="checkbox"> Special</label>
+                                <label class="filter-item"><input type="checkbox"> Homely</label>
+                                <label class="filter-item"><input type="checkbox"> Grave</label>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>                              
             </div>
         </div>
     </div>
@@ -205,9 +316,10 @@
                             <div class="pr-btn swiper-pagination"></div>
                           </div>
                           <div class="p-4">
-                            <h6 class="my-3 flower-mn">Hoa hồng chùm Polla</h6>
+                            <h6 class="my-3 flower-mn">Polla cluster roses</h6>
                             <p><i class="fa-solid fa-dollar-sign"></i> 23 <span class="post-tag tag-in">In of stock</span></p>
-                            <div class="ser-link"><a href="#">Buy</a></div>
+                            <a href="#">Buy</a>
+
                           </div>
                     </div>
                 </div>
@@ -224,9 +336,10 @@
                             <div class="pr-btn swiper-pagination"></div>
                           </div>
                           <div class="p-4">
-                            <h6 class="my-3 flower-mn">Hoa hồng trắng</h6>
+                            <h6 class="my-3 flower-mn">White Rose</h6>
                             <p><i class="fa-solid fa-dollar-sign"></i> 23 <span class="post-tag tag-in">In of stock</span></p>
-                            <div class="ser-link"><a href="#">Buy</a></div>
+                            <a href="#">Buy</a>
+
                           </div>
                     </div>
                 </div>
@@ -243,9 +356,10 @@
                             <div class="pr-btn swiper-pagination"></div>
                           </div>
                           <div class="p-4">
-                            <h6 class="my-3 flower-mn">Hoa hồng loang</h6>
+                            <h6 class="my-3 flower-mn">Sparkling roses</h6>
                             <p><i class="fa-solid fa-dollar-sign"></i> 23 <span class="post-tag tag-in">In of stock</span></p>
-                            <div class="ser-link"><a href="#">Buy</a></div>
+                            <a href="#">Buy</a>
+
                           </div>
                     </div>
                 </div>
@@ -262,9 +376,10 @@
                             <div class="pr-btn swiper-pagination"></div>
                           </div>
                           <div class="p-4">
-                            <h6 class="my-3 flower-mn">Hoa hồng Xanh </h6>
+                            <h6 class="my-3 flower-mn">Blue Rose </h6>
                             <p><i class="fa-solid fa-dollar-sign"></i> 23 <span class="post-tag tag-in">In of stock</span></p>
-                            <div class="ser-link"><a href="#">Buy</a></div>
+                            <a href="#">Buy</a>
+
                           </div>
                     </div>
                 </div>
@@ -281,9 +396,9 @@
                             <div class="pr-btn swiper-pagination"></div>
                           </div>
                           <div class="p-4">
-                            <h6 class="my-3 flower-mn">Hoa hồng trắng</h6>
+                            <h6 class="my-3 flower-mn">White Rose</h6>
                             <p><i class="fa-solid fa-dollar-sign"></i> 23 <span class="post-tag tag-in">In of stock</span></p>
-                            <div class="ser-link"><a href="#">Buy</a></div>
+                            <a href="#">Buy</a>
                           </div>
                     </div>
                 </div>
@@ -300,9 +415,9 @@
                             <div class="pr-btn swiper-pagination"></div>
                           </div>
                           <div class="p-4">
-                            <h6 class="my-3 flower-mn">Hoa hồng đỏ</h6>
+                            <h6 class="my-3 flower-mn">Red rose</h6>
                             <p><i class="fa-solid fa-dollar-sign"></i> 23 <span class="post-tag tag-out">Sold out</span></p>
-                          <div class="ser-link"><a href="#">Buy</a></div>
+                            <a href="#">Buy</a>
                           </div>
                     </div>
                 </div>
@@ -321,8 +436,8 @@
                     <a href="">
                         <img src="./img/giay1.webp" alt="">
                         <div class="implement-txt">
-                            <h3>Giấy Gói</h3>
-                            <p class="type">20 loại sản phẩm</p>
+                            <h3>Wrapping paper</h3>
+                            <p class="type">20 types of products</p>
                         </div>
                     </a>
                     
@@ -332,8 +447,8 @@
                     <a href="">
                         <img src="./img/rb4-1.webp" alt="">
                         <div class="implement-txt">
-                            <h3>Ruy băng</h3>
-                            <p class="type">20 loại sản phẩm</p>
+                            <h3>Ribbon</h3>
+                            <p class="type">20 types of products</p>
                         </div>
                     </a>
                 </div>
@@ -342,8 +457,8 @@
                     <a href="">
                         <img src="./img/den.jpg" alt="">
                         <div class="implement-txt">
-                            <h3>Đèn led</h3>
-                            <p class="type">20 loại sản phẩm</p>
+                            <h3>Led light</h3>
+                            <p class="type">20 types of products</p>
                         </div>
                     </a>
                 </div>
@@ -352,8 +467,8 @@
                     <a href="">
                         <img src="./img/thiep.jpg" alt="">
                         <div class="implement-txt">
-                            <h3>Thiệp</h3>
-                            <p class="type">20 loại sản phẩm</p>
+                            <h3>Card</h3>
+                            <p class="type">20 types of products</p>
                         </div>
                     </a>
                 </div>
@@ -388,7 +503,7 @@
                           <div class="p-4">
                             <h6 class="my-3 flower-mn">8 inch Cake</h6>
                             <p><i class="fa-solid fa-dollar-sign"></i> 23 <span class="post-tag tag-in">In of stock</span></p>
-                            <div class="ser-link"><a href="#">Buy</a></div>
+                            <a href="#">Buy</a>
                           </div>
                     </div>
                 </div>
@@ -408,7 +523,7 @@
                           <div class="p-4">
                             <h6 class="my-3 flower-mn">Fairy Cake</h6>
                             <p><i class="fa-solid fa-dollar-sign"></i> 23 <span class="post-tag tag-in">In of stock</span></p>
-                            <div class="ser-link"><a href="#">Buy</a></div>
+                            <a href="#">Buy</a>
                           </div>
                     </div>
                 </div>
@@ -427,7 +542,7 @@
                           <div class="p-4">
                             <h6 class="my-3 flower-mn">Strawberry Cake</h6>
                             <p><i class="fa-solid fa-dollar-sign"></i> 23 <span class="post-tag tag-in">In of stock</span></p>
-                            <div class="ser-link"><a href="#">Buy</a></div>
+                            <a href="#">Buy</a>
                           </div>
                     </div>
                 </div>
@@ -445,7 +560,7 @@
                           <div class="p-4">
                             <h6 class="my-3 flower-mn">Tulip Cake</h6>
                             <p><i class="fa-solid fa-dollar-sign"></i> 23 <span class="post-tag tag-in">In of stock</span></p>
-                            <div class="ser-link"><a href="#">Buy</a></div>
+                            <a href="#">Buy</a>
                           </div>
                     </div>
                 </div>
@@ -465,7 +580,7 @@
                           <div class="p-4">
                             <h6 class="my-3 flower-mn">Cute Dog</h6>
                             <p><i class="fa-solid fa-dollar-sign"></i> 23 <span class="post-tag tag-in">In of stock</span></p>
-                            <div class="ser-link"><a href="#">Buy</a></div>
+                            <a href="#">Buy</a>
                           </div>
                     </div>
                 </div>
@@ -484,7 +599,7 @@
                           <div class="p-4">
                             <h6 class="my-3 flower-mn">Blueberry Cake</h6>
                             <p><i class="fa-solid fa-dollar-sign"></i> 23 <span class="post-tag tag-in">In of stock</span></p>
-                          <div class="ser-link"><a href="#">Buy</a></div>
+                            <a href="#">Buy</a>
                           </div>
                     </div>
                 </div>
@@ -505,8 +620,8 @@
                         <div class="img">
                             <img src="./img/av1.jpg" alt="img" draggable="false">
                         </div>
-                        <h5 class="my-3 flower-mn cl43">Tí</h5>
-                            <span class="cl43">Nhân viên bán hàng</span>
+                        <h5 class="my-3 flower-mn cl43">Tis</h5>
+                            <span class="cl43">Sales agent</span>
                         <ul class="d-flex icon-contact-agent">
                             <li class="textft"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
                             <li class="textft"><a href="https://twitter.com/X?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-twitter"></i></a></li>
@@ -518,8 +633,8 @@
                         <div class="img">
                             <img src="./img/av2.jpg" alt="img" draggable="false">
                         </div>
-                        <h5 class="my-3 flower-mn cl43">Tèo</h5>
-                            <span class="cl43">Thu ngân</span>
+                        <h5 class="my-3 flower-mn cl43">Tany</h5>
+                            <span class="cl43">Cashier</span>
                         <ul class="d-flex icon-contact-agent">
                             <li class="textft"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
                             <li class="textft"><a href="https://twitter.com/X?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-twitter"></i></a></li>
@@ -531,8 +646,8 @@
                         <div class="img">
                             <img src="./img/av3.jpg" alt="img" draggable="false">
                         </div>
-                        <h5 class="my-3 flower-mn cl43">Anh Bảy</h5>
-                        <span class="cl43">Nhân viên bán hàng</span>
+                        <h5 class="my-3 flower-mn cl43">Seven</h5>
+                        <span class="cl43">Sales agent</span>
                         <ul class="d-flex icon-contact-agent">
                             <li class="textft"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
                             <li class="textft"><a href="https://twitter.com/X?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-twitter"></i></a></li>
@@ -544,8 +659,8 @@
                         <div class="img">
                             <img src="./img/av4.jpg" alt="img" draggable="false">
                         </div>
-                        <h5 class="my-3 flower-mn cl43">Anh Long</h5>
-                            <span class="cl43">Coi xe</span>
+                        <h5 class="my-3 flower-mn cl43">Mr. Long</h5>
+                            <span class="cl43">Sales agent</span>
                             <ul class="d-flex icon-contact-agent">
                                 <li class="textft"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
                                 <li class="textft"><a href="https://twitter.com/X?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-twitter"></i></a></li>
@@ -557,8 +672,8 @@
                         <div class="img">
                             <img src="./img/av5.jpg" alt="img" draggable="false">
                         </div>
-                        <h5 class="my-3 flower-mn cl43">Nhân viên</h5>
-                            <span class="cl43">Nhân viên bán hàng</span>
+                        <h5 class="my-3 flower-mn cl43">Staff</h5>
+                            <span class="cl43">Salesperson</span>
                             <ul class="d-flex icon-contact-agent">
                                 <li class="textft"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
                                 <li class="textft"><a href="https://twitter.com/X?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-twitter"></i></a></li>
@@ -570,8 +685,8 @@
                         <div class="img">
                             <img src="./img/av6.jpg" alt="img" draggable="false">
                         </div>
-                        <h5 class="my-3 flower-mn cl43">Chủ quán</h5>
-                        <span class="cl43">Dân FA lâu lăm</span>
+                        <h5 class="my-3 flower-mn cl43">Boss</h5>
+                        <span class="cl43"></span>
                             <ul class="d-flex icon-contact-agent">
                                 <li class="textft"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
                                 <li class="textft"><a href="https://twitter.com/X?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-twitter"></i></a></li>
@@ -594,7 +709,7 @@
                     <div class="col text-center sv-item">
                         <a href="">
                             <i class="fa-brands fa-pagelines fd my-4"></i>
-                            <h4>Gói hoa</h4>
+                            <h4>Fresh flower</h4>
                         </a>
                     </div>
                 </div>
@@ -602,7 +717,7 @@
                     <div class="col text-center sv-item">
                         <a href="">
                             <i class="fa-solid fa-utensils fd my-4"></i>
-                            <h4>Tổ chức tiệc</h4>
+                            <h4>Party organizing</h4>
                         </a>
                     </div>
                 </div>
@@ -610,7 +725,7 @@
                     <div class="col text-center sv-item">
                         <a href="">
                             <i class="fa-solid fa-cake-candles fd my-4"></i>
-                            <h4>Bánh kem</h4>
+                            <h4>Cake</h4>
                         </a>
                     </div>
                 </div>
@@ -618,7 +733,7 @@
                     <div class="col text-center sv-item">
                         <a href="">
                             <i class="fa-solid fa-user-ninja fd my-4"></i>
-                            <h4>Đào tạo</h4>
+                            <h4>Train</h4>
                         </a>
                     </div>
                 </div>
@@ -632,7 +747,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adiposicing. Sit nesciunt error illum a explicabo, ipsam nostrum</p>
             <form id="emailForm">
                 <div class="form-group">
-                  <input type="text" id="email" name="email">
+                  <input type="text" id="email" name="email" autocomplete="off">
                   <button type="submit">Subscribe</button>
               </div>
             </form>
@@ -666,7 +781,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="ft-right">
+                <div class="ft-right col">
                     <h2>Connect With Us</h2>
                     <div>
                         <li class="textft"><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
@@ -674,6 +789,7 @@
                         <li class="textft"><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
                         <li class="textft"><a href="https://www.google.com.vn/?hl=vi"><i class="fa-brands fa-google"></i></i></a></li>
                     </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119084.51948777579!2d105.74734452456423!3d21.136823141698333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313500f801d6855d%3A0x7787dfdaf1638d4a!2zxJDDtG5nIEFuaCwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1699125714169!5m2!1svi!2s" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         <div class="ft-bottom">Copyright © 2017,  HN  All rights reserved <i class="fas fa-heart" style="font-size: 24px; color: red;"></i>  <a class="textft" href=""></a></div>
@@ -681,12 +797,16 @@
 </div>
 
     <a class="backtop" href="#"><i class="fa-regular fa-circle-left fa-rotate-90 flower-mn"></i></a>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script src="./js/btn.js"></script>
-    <script src="./js/validate.js"></script>
+    <script src="./js/validateemail.js"></script>
     <script src="./js/price.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/othersfilters.js"></script>
 </body>
 </html>

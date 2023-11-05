@@ -134,6 +134,9 @@ padding: 30px;
     cursor: pointer;
 
 }
+button{
+    margin: 0;
+}
 
 /* content right */
 .popular-item{
